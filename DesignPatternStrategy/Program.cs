@@ -24,6 +24,8 @@ namespace DesignPatternStrategy
 
             // test
 
+            // master
+
 
             Console.ReadKey();
         }
