@@ -22,6 +22,9 @@ namespace DesignPatternStrategy
             register.SetRegister(new WordRegister());
             register.Close();
 
+            // test
+
+
             Console.ReadKey();
         }
     }
