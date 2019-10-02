@@ -16,8 +16,6 @@ namespace DesignPatternStrategy
             travelPlaner.SetTravelStrategy(new Car());
             travelPlaner.Drive(20);
 
-            //Console.ReadKey();
-
             var register = new RegisterContext(new ExcelRegister());
             register.Close();
 
