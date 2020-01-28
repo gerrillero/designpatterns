@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento", "Memento\Memento.csproj", "{4F0B6BA5-BB5A-4FFF-B38E-C48E8EC22E94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternFactory", "DesignPatterns\DesignPatternFactory.csproj", "{3B5F1416-60CE-4142-A14E-D017549C6288}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternStrategy", "DesignPatternStrategy\DesignPatternStrategy.csproj", "{72F859E5-85BB-487A-921E-37D959DE04C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4F0B6BA5-BB5A-4FFF-B38E-C48E8EC22E94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F0B6BA5-BB5A-4FFF-B38E-C48E8EC22E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F0B6BA5-BB5A-4FFF-B38E-C48E8EC22E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F0B6BA5-BB5A-4FFF-B38E-C48E8EC22E94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B5F1416-60CE-4142-A14E-D017549C6288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B5F1416-60CE-4142-A14E-D017549C6288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B5F1416-60CE-4142-A14E-D017549C6288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B5F1416-60CE-4142-A14E-D017549C6288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72F859E5-85BB-487A-921E-37D959DE04C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72F859E5-85BB-487A-921E-37D959DE04C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72F859E5-85BB-487A-921E-37D959DE04C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72F859E5-85BB-487A-921E-37D959DE04C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
