@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace State
+﻿namespace State
 {
     class Program
     {
         static void Main(string[] args)
         {
+            var canvas = new Canvas();
+            canvas.CurrentTool = ToolType.BRUSH;
+            canvas.MouseDown();
+            canvas.MouseUp();
         }
     }
 }
