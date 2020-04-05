@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strate
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyMosh", "StrategyMosh\StrategyMosh.csproj", "{6DC61CE3-8A06-4BAF-BB89-029C4AAF2766}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterator.csproj", "{D123C443-5464-4825-88CC-9A8D1F596BBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{7B483AC1-F781-4536-99DB-63818BE68FC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{6DC61CE3-8A06-4BAF-BB89-029C4AAF2766}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DC61CE3-8A06-4BAF-BB89-029C4AAF2766}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DC61CE3-8A06-4BAF-BB89-029C4AAF2766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D123C443-5464-4825-88CC-9A8D1F596BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D123C443-5464-4825-88CC-9A8D1F596BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D123C443-5464-4825-88CC-9A8D1F596BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D123C443-5464-4825-88CC-9A8D1F596BBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B483AC1-F781-4536-99DB-63818BE68FC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B483AC1-F781-4536-99DB-63818BE68FC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B483AC1-F781-4536-99DB-63818BE68FC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B483AC1-F781-4536-99DB-63818BE68FC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
