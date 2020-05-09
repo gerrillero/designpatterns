@@ -2,6 +2,9 @@
 
 namespace TemplateMethod
 {
+    /// <summary>
+    /// This is part of Autofac dependecy injection container.
+    /// </summary>
     public class ContainerConfig
     {
         public static IContainer Container { get; set; }
