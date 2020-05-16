@@ -10,7 +10,7 @@
             set
             {
                 content = value;
-                NotityObservers();
+                OnControlChanged();
             }
         }
     }

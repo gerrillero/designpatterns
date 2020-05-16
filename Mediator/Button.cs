@@ -9,7 +9,7 @@
             set
             {
                 isEnabled = value;
-                NotityObservers();
+                OnControlChanged();
             }
         }
     }

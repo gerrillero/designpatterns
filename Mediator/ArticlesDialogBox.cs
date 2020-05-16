@@ -10,13 +10,23 @@ namespace Mediator
 
         public ArticlesDialogBox()
         {
-
+            articlesListbox.ControlChanged += ArticlesListbox_ControlChanged;
+            titleTexbox.ControlChanged += TitleTexbox_ControlChanged;
         }
 
+        private void TitleTexbox_ControlChanged(object sender, EventArgs e)
+        {
+            TitleSelected();
+        }
+
+        private void ArticlesListbox_ControlChanged(object sender, EventArgs e)
+        {
+            ArticleSelected();
+        }
 
         public void SimulateUserInteraction()
         {
-            articlesListbox.Selection = "Artivle 1";
+            articlesListbox.Selection = "Article 1";
             //titleTexbox.Content = "";
             //titleTexbox.Content = "Article 2";
             Console.WriteLine("TextBox: " + titleTexbox.Content);

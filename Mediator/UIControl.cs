@@ -1,22 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System;
 
 namespace Mediator
 {
     public abstract class UIControl
     {
-        private List<IEventHandler> observers = new List<IEventHandler>();
+        public event EventHandler ControlChanged;
 
-        public void AddEventHandler(IEventHandler observer)
+        protected void OnControlChanged()
         {
-            observers.Add(observer);
-        }
-
-        protected void NotityObservers()
-        {
-            foreach (var observer in observers)
-            {
-                observer.Handle();
-            }
+            ControlChanged?.Invoke(this, EventArgs.Empty);
         }
     }
 }
