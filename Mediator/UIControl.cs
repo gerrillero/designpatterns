@@ -1,12 +1,22 @@
-﻿namespace Mediator
+﻿using System.Collections.Generic;
+
+namespace Mediator
 {
     public abstract class UIControl
     {
-        protected DialogBox owner;
+        private List<IEventHandler> observers = new List<IEventHandler>();
 
-        public UIControl(DialogBox owner)
+        public void AddEventHandler(IEventHandler observer)
         {
-            this.owner = owner;
+            observers.Add(observer);
+        }
+
+        protected void NotityObservers()
+        {
+            foreach (var observer in observers)
+            {
+                observer.Handle();
+            }
         }
     }
 }

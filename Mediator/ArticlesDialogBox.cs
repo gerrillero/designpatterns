@@ -2,17 +2,15 @@
 
 namespace Mediator
 {
-    public class ArticlesDialogBox : DialogBox
+    public class ArticlesDialogBox
     {
-        private ListBox articlesListbox;
-        private TextBox titleTexbox;
-        private Button saveButton;
+        private ListBox articlesListbox = new ListBox();
+        private TextBox titleTexbox = new TextBox();
+        private Button saveButton = new Button();
 
         public ArticlesDialogBox()
         {
-            articlesListbox = new ListBox(this);
-            titleTexbox = new TextBox(this);
-            saveButton = new Button(this);
+
         }
 
 
@@ -23,14 +21,6 @@ namespace Mediator
             //titleTexbox.Content = "Article 2";
             Console.WriteLine("TextBox: " + titleTexbox.Content);
             Console.WriteLine("Button: " + saveButton.IsEnabled);
-        }
-
-        public override void Changed(UIControl control)
-        {
-            if (control == articlesListbox)
-                ArticleSelected();
-            else if (control == titleTexbox)
-                TitleSelected();
         }
 
         private void TitleSelected()

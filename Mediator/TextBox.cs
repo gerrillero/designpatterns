@@ -10,14 +10,8 @@
             set
             {
                 content = value;
-                owner.Changed(this);
+                NotityObservers();
             }
-        }
-
-        public TextBox(DialogBox owner)
-            : base(owner)
-        {
-
         }
     }
 }

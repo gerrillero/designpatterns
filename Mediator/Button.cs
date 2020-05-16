@@ -9,14 +9,8 @@
             set
             {
                 isEnabled = value;
-                owner.Changed(this);
+                NotityObservers();
             }
-        }
-
-        public Button(DialogBox owner)
-            : base(owner)
-        {
-
         }
     }
 }

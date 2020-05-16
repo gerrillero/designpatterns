@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="ArticlesDialogBox.cs" />
     <Compile Include="Button.cs" />
-    <Compile Include="DialogBox.cs" />
+    <Compile Include="IEventHandler.cs" />
     <Compile Include="ListBox.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

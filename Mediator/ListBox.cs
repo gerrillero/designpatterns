@@ -1,6 +1,6 @@
 ﻿namespace Mediator
 {
-    public class ListBox : UIControl
+    public class ListBox : UIControl, IEventHandler
     {
         private string selection;
 
@@ -10,15 +10,13 @@
             set
             {
                 selection = value;
-                owner.Changed(this);
+                NotityObservers();
             }
         }
 
-
-        public ListBox(DialogBox owner)
-            : base(owner)
+        public void Handle()
         {
-
+            
         }
     }
 }
