@@ -47,6 +47,11 @@
     <Compile Include="Canvas.cs" />
     <Compile Include="Exercise\DirectionService.cs" />
     <Compile Include="EraserTool.cs" />
+    <Compile Include="Exercise\ITravelState.cs" />
+    <Compile Include="Exercise\States\BicyclingState.cs" />
+    <Compile Include="Exercise\States\DrivingState.cs" />
+    <Compile Include="Exercise\TransitState.cs" />
+    <Compile Include="Exercise\WalkingState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelectionTool.cs" />

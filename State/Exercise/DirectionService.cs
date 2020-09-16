@@ -1,77 +1,26 @@
-﻿using System;
-
-namespace State
+﻿namespace State.Exercise
 {
     public class DirectionService
     {
-        private TravelMode travelMode;
+        public ITravelState CurrentTravelState { get; set; }
 
-        public int getEta()
+
+        public DirectionService(ITravelState currentTravelState)
         {
-            if (travelMode == TravelMode.DRIVING)
-            {
-                Console.WriteLine("Calculating ETA (driving)");
-                return 1;
-            }
-            else if (travelMode == TravelMode.BICYCLING)
-            {
-                Console.WriteLine("Calculating ETA (bicycling)");
-                return 2;
-            }
-            else if (travelMode == TravelMode.TRANSIT)
-            {
-                Console.WriteLine("Calculating ETA (transit)");
-                return 3;
-            }
-            else
-            {
-                Console.WriteLine("Calculating ETA (walking)");
-                return 4;
-            }
+            CurrentTravelState = currentTravelState;
         }
 
-        public int getDirection()
+        public int GetEta()
         {
-            if (travelMode == TravelMode.DRIVING)
-            {
-                Console.WriteLine("Calculating Direction (driving)");
-                return 1;
-            }
-            else if (travelMode == TravelMode.BICYCLING)
-            {
-                Console.WriteLine("Calculating Direction (bicycling)");
-                return 2;
-            }
-            else if (travelMode == TravelMode.TRANSIT)
-            {
-                Console.WriteLine("Calculating Direction (transit)");
-                return 3;
-            }
-            else
-            {
-                Console.WriteLine("Calculating Direction (walking)");
-                return 4;
-            }
+            return CurrentTravelState.GetEta();
+
         }
 
-        public TravelMode getTravelMode()
+        public int GetDirection()
         {
-            return travelMode;
+            return CurrentTravelState.GetDiretion();
         }
 
-        public void setTravelMode(TravelMode travelMode)
-        {
-            this.travelMode = travelMode;
-        }
-    }
-
-
-    public enum TravelMode
-    {
-        DRIVING,
-        BICYCLING,
-        TRANSIT,
-        WALKING
     }
 
 }
