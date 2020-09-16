@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="BlackAndWhiteFilter.cs" />
     <Compile Include="ColorFiler.cs" />
+    <Compile Include="Exercise\Class1.cs" />
     <Compile Include="ICompressor.cs" />
     <Compile Include="IFilter.cs" />
     <Compile Include="ImageStorage.cs" />
