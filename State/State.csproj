@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="BrushTool.cs" />
     <Compile Include="Canvas.cs" />
+    <Compile Include="Exercise\DirectionService.cs" />
     <Compile Include="EraserTool.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -54,5 +55,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
