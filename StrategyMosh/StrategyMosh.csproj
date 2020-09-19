@@ -45,7 +45,10 @@
   <ItemGroup>
     <Compile Include="BlackAndWhiteFilter.cs" />
     <Compile Include="ColorFiler.cs" />
-    <Compile Include="Exercise\Class1.cs" />
+    <Compile Include="Exercise\AesEncryptStrategy.cs" />
+    <Compile Include="Exercise\ChatClient.cs" />
+    <Compile Include="Exercise\DesEncryptStrategy.cs" />
+    <Compile Include="Exercise\IEncryptStrategy.cs" />
     <Compile Include="ICompressor.cs" />
     <Compile Include="IFilter.cs" />
     <Compile Include="ImageStorage.cs" />
