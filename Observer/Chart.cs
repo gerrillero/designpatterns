@@ -1,16 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Observer
 {
     public class Chart : IObserver
     {
+        private readonly IDataSource _dataSource;
+
+        public Chart(IDataSource dataSource)
+        {
+            _dataSource = dataSource;
+        }
+
         public void Update()
         {
-            Console.WriteLine("Chart got updated");
+            Console.WriteLine("Chart got updated, DataSource value: " + _dataSource.Value); ;
         }
     }
 }

@@ -9,7 +9,6 @@ namespace Observer
         public void AddObserver(IObserver observer)
         {
             _observers.Add(observer);
-            //test
         }
 
         public void RemoveObserver(IObserver observer)
