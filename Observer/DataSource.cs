@@ -1,24 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Observer
+﻿namespace Observer
 {
-    public class DataSource : Subject
+    public interface IDataSource
     {
-		private int value;
+        int Value { get; set; }
+    }
+    public class DataSource : Subject, IDataSource
+    {
+        private int value;
 
-		public int Value
-		{
-			get { return value; }
-			set 
-			{ 
-				this.value = value;
-				NotifyObservers();
-			}
-		}
+        public int Value
+        {
+            get { return value; }
+            set
+            {
+                this.value = value;
+                NotifyObservers();
+            }
+        }
 
-	}
+    }
 }
