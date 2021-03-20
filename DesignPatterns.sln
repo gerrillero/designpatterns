@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Comp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{FEECD9AE-DCBB-4947-8632-28F3C207557C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{FCF50543-9AC4-47CE-A1D8-ED1598BE05EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{FEECD9AE-DCBB-4947-8632-28F3C207557C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEECD9AE-DCBB-4947-8632-28F3C207557C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEECD9AE-DCBB-4947-8632-28F3C207557C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCF50543-9AC4-47CE-A1D8-ED1598BE05EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF50543-9AC4-47CE-A1D8-ED1598BE05EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF50543-9AC4-47CE-A1D8-ED1598BE05EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF50543-9AC4-47CE-A1D8-ED1598BE05EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -118,6 +124,7 @@ Global
 		{0025A68B-9802-4D43-89AD-98F98894667E} = {E077DE6D-68FF-4EC8-866E-59B536E7E228}
 		{DDB54281-D7D6-4D91-B071-994DE521185A} = {8490078F-B442-4572-9CC3-599304531CA3}
 		{FEECD9AE-DCBB-4947-8632-28F3C207557C} = {8490078F-B442-4572-9CC3-599304531CA3}
+		{FCF50543-9AC4-47CE-A1D8-ED1598BE05EA} = {8490078F-B442-4572-9CC3-599304531CA3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04D9E557-8151-43A9-A3F4-4DAAEA1C92CE}
