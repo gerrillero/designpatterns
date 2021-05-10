@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Composite
 {
-    public class Shape
+    public class Shape : IComponent
     {
         public void Render()
         {
             Console.WriteLine("Render shape");
+        }
+
+        public void Move()
+        {
+            Console.WriteLine("Move shape");
         }
     }
 }

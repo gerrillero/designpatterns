@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DDB54281-D7D6-4D91-B071-994DE521185A}</ProjectGuid>
+    <ProjectGuid>{FEECD9AE-DCBB-4947-8632-28F3C207557C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Composite</RootNamespace>
-    <AssemblyName>Composite</AssemblyName>
+    <RootNamespace>Adapter</RootNamespace>
+    <AssemblyName>Adapter</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Group.cs" />
-    <Compile Include="IComponent.cs" />
+    <Compile Include="CaramelFilterAdapter.cs" />
+    <Compile Include="IFilter.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="ImageView.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Shape.cs" />
+    <Compile Include="ThirdPartFilters\Caramel.cs" />
+    <Compile Include="VividFilter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
