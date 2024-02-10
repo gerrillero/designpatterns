@@ -2,7 +2,7 @@
 
 namespace Factory
 {
-    internal class MySQLConnection : IConnection
+    internal class MySqlConnection : IConnection
     {
         public void Connect()
         {

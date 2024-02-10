@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Adapter.ThirdPartFilters
 {
@@ -10,7 +6,7 @@ namespace Adapter.ThirdPartFilters
     {
         public void Init()
         {
-
+            // Method intentionally left empty.
         }
 
         public void Render(Image image)

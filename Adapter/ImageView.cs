@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Adapter
+﻿namespace Adapter
 {
     public class ImageView
     {
-        private IFilter _filter;
+        private readonly IFilter _filter;
 
         public ImageView(IFilter filter)
         {

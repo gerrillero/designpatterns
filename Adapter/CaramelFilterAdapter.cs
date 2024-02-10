@@ -1,15 +1,10 @@
 ﻿using Adapter.ThirdPartFilters;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Adapter
 {
     public class CaramelFilterAdapter : IFilter
     {
-        private Caramel _caramel;
+        private readonly Caramel _caramel;
 
         public CaramelFilterAdapter(Caramel caramel)
         {

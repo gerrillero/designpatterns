@@ -48,7 +48,7 @@
     <Compile Include="IConnection.cs" />
     <Compile Include="MongoDBConnection.cs" />
     <Compile Include="MSSQLConnection.cs" />
-    <Compile Include="MySQLConnection.cs" />
+    <Compile Include="MySqlConnection.cs" />
     <Compile Include="OracleConnection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
